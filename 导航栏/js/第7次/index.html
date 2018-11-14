@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+
+		<script>
+			function rngnb() {
+				z = document.getElementById("div1");
+				x = document.createElement("address");
+				y = document.createTextNode("A");
+				z.appendChild(x);
+				x.appendChild(y);
+				x.style.color = "yellow";
+				x.style.backgroundColor = "red";
+			}
+			function ignb(){
+			x=document.getElementById("div1");
+			z=document.getElementsByTagName("a").length
+			y=document.getElementsByTagName("a");
+			for(i=z-1;i>=0;i--)
+			{
+				x.removeChild(y[i]);
+			}
+		}
+			function edgnb(){
+			x=document.getElementById("div1");
+			z=document.getElementsByTagName("p").length
+			y=document.getElementsByTagName("p");
+			for(i=z-1;i>=0;i--)
+			{
+				x.removeChild(y[i]);
+			}
+		}
+		function lplnb(){
+			x=document.getElementsByTagName("div");
+			z=x[0].children;
+			for(i=0;i<z.length;i++)
+			{
+				z[i].style.backgroundColor="red";
+			}
+		}
+		</script>
+		<style>
+			div{
+				width: 250px;
+				height: 250px;
+				border: darkslateblue;
+				background-color: #00FFFF;
+			}
+			button{
+				border: 2px solid #00FFFF;
+				background-color: white;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div Id="div1" >
+			<a style="font-family: 'agency fb';">这是第一个A元素</a>
+			<p></p>
+			<a>这是第二个A元素</a>
+			<p></p>
+			<a>这是第三个A元素</a>
+			<p>这是第一个p元素</p>
+			<p>这是第二个p元素</p>
+			<p>这是第三个p元素</p>
+		</div>
+		<button onclick="rngnb()">添加A元素</button>
+		<button onclick="ignb()">删除A元素</button>
+		<button onclick="lplnb()">变红色背景</button>
+		<button onclick="edgnb()">删除P元素</button>
+		
+	</body>
+
+</html>
