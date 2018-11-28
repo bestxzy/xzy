@@ -1,0 +1,69 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>主题餐厅创业计划</title>
+
+<link type="text/css" href="css/index.css" rel="stylesheet">
+
+<script type="text/javascript" src="js/jquery1.42.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    function anim(duration){
+        $('#mint').animate(
+            {height: 'toggle'},
+            {duration: duration}
+        );
+    }
+    $('#closebtn').click(function() {
+        $('#mintbar').slideUp();
+        anim(600);
+    });
+   
+    $('#mint').click(function() {
+        anim(600);
+        $('#mintbar').slideDown('slow');
+    });
+	
+});
+</script>
+
+</head>
+
+<body> 
+<div class="box-bj"><img src="img/1.jpg" /></div>
+<div id="mintbar"><a id="closebtn" href="#"><img src="img/导航图标.png" /></a></div>
+
+<div id="mint" style="display:none;position:absolute;top:0;right:0px;">
+	<div class="box-nav-bj"><img style="right:0px; top:0px;" src="img/导航框.png" /></div>
+	<div class="box-nav">
+		<li><a href="1.html">项目简介</a></li>
+		<li><a href="2.html">餐厅特色</a></li>
+		<li><a href="3.html">市场分析</a></li>
+		<li><a href="4.html">群体目标</a></li>
+		<li><a href="5.html">战略管理</a></li>
+		<li><a href="6.html">联系我们</a></li>
+	</div>
+	<img src="img/叉.png" alt="丝带"/>
+	<div class="box-phone">
+		<p>服务热线：</p>
+		<p>400-091-6001</p> 
+	</div>
+</div>
+
+<div class="box-dibu">
+    <div class="box-dibu1">
+       <p>XZY主题餐厅有限公司</p>
+       <p>湖南省湘潭市</p>
+    </div>
+    <div class="box-dibu2">
+       <a href="https://wx.qq.com/"><img src="img/wd04.png" /></a>
+       <a href="https://web2.qq.com/"><img src="img/wd05.png" /></a>
+    </div>
+</div>
+
+
+</body>
+</html>
